@@ -189,3 +189,54 @@ transform:scale(1.03);
 filter:brightness(1.1);
 
 }
+/* Smooth Page Animation */
+
+html{
+scroll-behavior:smooth;
+}
+
+.card{
+
+opacity:0;
+
+transform:translateY(35px);
+
+animation:fadeUp .6s ease forwards;
+
+}
+
+.card:nth-child(2){animation-delay:.05s;}
+.card:nth-child(3){animation-delay:.10s;}
+.card:nth-child(4){animation-delay:.15s;}
+.card:nth-child(5){animation-delay:.20s;}
+.card:nth-child(6){animation-delay:.25s;}
+.card:nth-child(7){animation-delay:.30s;}
+.card:nth-child(8){animation-delay:.35s;}
+.card:nth-child(9){animation-delay:.40s;}
+.card:nth-child(10){animation-delay:.45s;}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(35px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.card{
+
+will-change:transform;
+
+  }
