@@ -353,3 +353,12 @@ transform:translate(-180px,-100px);
 }
 
   }
+.category-btn.active{
+
+background:#2563eb;
+
+color:#fff;
+
+box-shadow:0 0 20px rgba(37,99,235,.5);
+
+}
