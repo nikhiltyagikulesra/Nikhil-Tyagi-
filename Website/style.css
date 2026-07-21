@@ -362,3 +362,55 @@ color:#fff;
 box-shadow:0 0 20px rgba(37,99,235,.5);
 
 }
+img{
+max-width:100%;
+display:block;
+}
+
+.card img{
+object-fit:contain;
+}
+
+.card{
+overflow:hidden;
+}
+
+@media (max-width:768px){
+
+body{
+padding:15px;
+}
+
+header{
+padding:18px;
+top:10px;
+}
+
+header h1{
+font-size:2.2rem;
+}
+
+header p{
+font-size:15px;
+}
+
+#searchInput{
+font-size:16px;
+padding:14px 18px;
+}
+
+#websiteContainer{
+grid-template-columns:1fr;
+gap:18px;
+}
+
+.category-section{
+gap:8px;
+}
+
+.category-section button{
+padding:9px 15px;
+font-size:14px;
+}
+
+  }
