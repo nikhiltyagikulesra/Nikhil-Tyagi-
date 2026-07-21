@@ -67,3 +67,30 @@ card.style.transition=".25s";
 });
 
 });
+const categoryButtons = document.querySelectorAll(".category-btn");
+
+categoryButtons.forEach(button => {
+
+button.addEventListener("click",()=>{
+
+categoryButtons.forEach(btn=>btn.classList.remove("active"));
+
+button.classList.add("active");
+
+const category = button.dataset.category;
+
+if(category==="All"){
+
+displayWebsites(websites);
+
+return;
+
+}
+
+const filtered = websites.filter(site=>site.category===category);
+
+displayWebsites(filtered);
+
+});
+
+});
