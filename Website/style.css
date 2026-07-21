@@ -240,3 +240,107 @@ transform:translateY(0);
 will-change:transform;
 
   }
+/* ---------- Background ---------- */
+
+body{
+
+background:
+radial-gradient(circle at top left,#1d4ed8 0%,transparent 30%),
+radial-gradient(circle at bottom right,#0ea5e9 0%,transparent 30%),
+linear-gradient(135deg,#070b14,#0f172a,#111827);
+
+background-attachment:fixed;
+
+overflow-x:hidden;
+
+}
+
+/* Floating Glow */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+width:420px;
+
+height:420px;
+
+border-radius:50%;
+
+background:#2563eb;
+
+filter:blur(140px);
+
+opacity:.22;
+
+top:-120px;
+
+left:-120px;
+
+animation:moveGlow1 18s infinite alternate ease-in-out;
+
+pointer-events:none;
+
+}
+
+body::after{
+
+content:"";
+
+position:fixed;
+
+width:420px;
+
+height:420px;
+
+border-radius:50%;
+
+background:#06b6d4;
+
+filter:blur(150px);
+
+opacity:.18;
+
+bottom:-150px;
+
+right:-150px;
+
+animation:moveGlow2 22s infinite alternate ease-in-out;
+
+pointer-events:none;
+
+}
+
+@keyframes moveGlow1{
+
+0%{
+
+transform:translate(0,0);
+
+}
+
+100%{
+
+transform:translate(180px,120px);
+
+}
+
+}
+
+@keyframes moveGlow2{
+
+0%{
+
+transform:translate(0,0);
+
+}
+
+100%{
+
+transform:translate(-180px,-100px);
+
+}
+
+  }
