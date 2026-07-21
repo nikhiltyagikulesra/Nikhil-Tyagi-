@@ -23,7 +23,7 @@ function displayWebsites(list) {
 
             <p>${site.desc}</p>
 
-            <a href="${site.url}" target="_blank">
+            <a href="${site.url}" target="_blank" rel="noopener noreferrer">
                 Visit Website
             </a>
 
