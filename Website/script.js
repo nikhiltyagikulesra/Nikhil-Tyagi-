@@ -56,3 +56,14 @@ searchInput.addEventListener("input", () => {
     displayWebsites(filtered);
 
 });
+// Card Hover Sound Ready (Future)
+
+document.querySelectorAll(".card").forEach(card=>{
+
+card.addEventListener("mouseenter",()=>{
+
+card.style.transition=".25s";
+
+});
+
+});
